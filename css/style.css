@@ -1020,3 +1020,404 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+
+
+/* Scrimmo page
+--------------------------------*/
+#scrimmo {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#scrimmo .scrimmo-container .background {
+  min-height: 300px;
+  background: url(../img/content/projects/scrimmo/appartment.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+
+#scrimmo .scrimmo-container .content {
+  background: #fff;
+}
+
+#scrimmo .scrimmo-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #scrimmo .scrimmo-container .title {
+    padding-top: 15px;
+  }
+}
+
+#scrimmo .scrimmo-container p {
+  line-height: 26px;
+}
+
+#scrimmo .scrimmo-container p:last-child {
+  margin-bottom: 0;
+}
+
+#scrimmo .scrimmo-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#scrimmo .scrimmo-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #2dc997;
+}
+
+#scrimmo .scrimmo-container .icon-box .icon i {
+  color: #2dc997;
+  font-size: 24px;
+}
+
+#scrimmo .scrimmo-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#scrimmo .scrimmo-container .icon-box .title a {
+  color: #111;
+}
+
+#scrimmo .scrimmo-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#scrimmo-btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#scrimmo-btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+/* Myfinance page
+--------------------------------*/
+#myfinance {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#myfinance .myfinance-container .background {
+  min-height: 300px;
+  background: url(../img/content/projects/myfinance/myfinance.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+
+#myfinance .myfinance-container .content {
+  background: #fff;
+}
+
+#myfinance .myfinance-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #myfinance .myfinance-container .title {
+    padding-top: 15px;
+  }
+}
+
+#myfinance .myfinance-container p {
+  line-height: 26px;
+}
+
+#myfinance .myfinance-container p:last-child {
+  margin-bottom: 0;
+}
+
+#myfinance .myfinance-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#myfinance .myfinance-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #2dc997;
+}
+
+#myfinance .myfinance-container .icon-box .icon i {
+  color: #2dc997;
+  font-size: 24px;
+}
+
+#myfinance .myfinance-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#myfinance .myfinance-container .icon-box .title a {
+  color: #111;
+}
+
+#myfinance .myfinance-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#myfinance-btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#myfinance-btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+/* Flatsy page
+--------------------------------*/
+#flatsy {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#flatsy .flatsy-container .background {
+  min-height: 300px;
+  background: url(../img/content/projects/flatsy/flatsy.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+
+#flatsy .flatsy-container .content {
+  background: #fff;
+}
+
+#flatsy .flatsy-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #flatsy .flatsy-container .title {
+    padding-top: 15px;
+  }
+}
+
+#flatsy .flatsy-container p {
+  line-height: 26px;
+}
+
+#flatsy .flatsy-container p:last-child {
+  margin-bottom: 0;
+}
+
+#flatsy .flatsy-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#flatsy .flatsy-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #2dc997;
+}
+
+#flatsy .flatsy-container .icon-box .icon i {
+  color: #2dc997;
+  font-size: 24px;
+}
+
+#flatsy .flatsy-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+stoma
+#flatsy .flatsy-container .icon-box .title a {
+  color: #111;
+}
+
+#flatsy .flatsy-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#flatsy-btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#flatsy-btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+/* Stoma page
+--------------------------------*/
+#stoma {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#stoma .stoma-container .background {
+  min-height: 300px;
+  background: url(../img/content/projects/stoma/stoma.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+
+#stoma .stoma-container .content {
+  background: #fff;
+}
+
+#stoma .stoma-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #stoma .stoma-container .title {
+    padding-top: 15px;
+  }
+}
+
+#stoma .stoma-container p {
+  line-height: 26px;
+}
+
+#stoma .stoma-container p:last-child {
+  margin-bottom: 0;
+}
+
+#stoma .stoma-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#stoma .stoma-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #2dc997;
+}
+
+#stoma .stoma-container .icon-box .icon i {
+  color: #2dc997;
+  font-size: 24px;
+}
+
+#stoma .stoma-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#stoma .stoma-container .icon-box .title a {
+  color: #111;
+}
+
+#stoma .stoma-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#stoma-btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#stoma-btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
