@@ -1422,50 +1422,50 @@ stoma
   border: 2px solid #2dc997;
 }
 
-/* StopMignonnerie page
+/* epidemie-des-mots page
 --------------------------------*/
-#stop-mignonnerie {
+#epidemie-des-mots {
   background: #fff;
   padding: 80px 0;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .background {
+#epidemie-des-mots .epidemie-des-mots-container .background {
   min-height: 300px;
-  background: url(../img/content/projects/stop-mignonnerie/stop-mignonnerie-logo.png) center top no-repeat;
+  background: url(../img/content/projects/epidemie-des-mots/epidemie_des_mots.jpg) center top no-repeat;
   margin-bottom: 10px;
 }
 
-#stoma .stoma-container .content {
+#epidemie-des-mots .epidemie-des-mots-container .content {
   background: #fff;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .title {
+#epidemie-des-mots .epidemie-des-mots-container .title {
   color: #333;
   font-weight: 700;
   font-size: 32px;
 }
 
 @media (max-width: 768px) {
-  #stop-mignonnerie .stop-mignonnerie-container .title {
+  #epidemie-des-mots .epidemie-des-mots-container .title {
     padding-top: 15px;
   }
 }
 
-#stop-mignonnerie .stop-mignonnerie-container p {
+#epidemie-des-mots .epidemie-des-mots-container p {
   line-height: 26px;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container p:last-child {
+#epidemie-des-mots .epidemie-des-mots-container p:last-child {
   margin-bottom: 0;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .icon-box {
+#epidemie-des-mots .epidemie-des-mots-container .icon-box {
   background: #fff;
   background-size: cover;
   padding: 0 0 30px 0;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .icon-box .icon {
+#epidemie-des-mots .epidemie-des-mots-container .icon-box .icon {
   float: left;
   background: #fff;
   width: 64px;
@@ -1479,12 +1479,12 @@ stoma
   border: 2px solid #2dc997;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .icon-box .icon i {
+#epidemie-des-mots .epidemie-des-mots-container .icon-box .icon i {
   color: #2dc997;
   font-size: 24px;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .icon-box .title {
+#epidemie-des-mots .epidemie-des-mots-container .icon-box .title {
   margin-left: 80px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -1492,17 +1492,17 @@ stoma
   text-transform: uppercase;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .icon-box .title a {
+#epidemie-des-mots .epidemie-des-mots-container .icon-box .title a {
   color: #111;
 }
 
-#stop-mignonnerie .stop-mignonnerie-container .icon-box .description {
+#epidemie-des-mots .epidemie-des-mots-container .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
 }
 
-#stop-mignonnerie-btn-get-started {
+#epidemie-des-mots-btn-get-started {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -1517,8 +1517,125 @@ stoma
   color: #fff;
 }
 
-#stop-mignonnerie-btn-get-started:hover {
+#epidemie-des-mots-btn-get-started:hover {
   background: #2dc997;
   border: 2px solid #2dc997;
 }
 
+/* Sens critique page
+--------------------------------*/
+#sens-critique-recommended-system {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .background {
+  min-height: 300px;
+  background: url(../img/content/projects/sens-critique-recommended-system/sens-critique-recommended-system-logo.png) center top no-repeat;
+  margin-bottom: 10px;
+}
+
+#stoma .stoma-container .content {
+  background: #fff;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #sens-critique-recommended-system .sens-critique-recommended-system-container .title {
+    padding-top: 15px;
+  }
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container p {
+  line-height: 26px;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container p:last-child {
+  margin-bottom: 0;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #2dc997;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .icon-box .icon i {
+  color: #2dc997;
+  font-size: 24px;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .icon-box .title a {
+  color: #111;
+}
+
+#sens-critique-recommended-system .sens-critique-recommended-system-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#sens-critique-recommended-system-btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#sens-critique-recommended-system-btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+
+#sens-critique td, #sens-critique th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#sens-critique tr:nth-child(even){background-color: #f2f2f2;}
+
+#sens-critique tr:hover {background-color: #ddd;}
+
+#sens-critique th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2dc997;
+  color: white;
+}

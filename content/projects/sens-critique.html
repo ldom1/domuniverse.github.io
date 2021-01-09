@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dom universe</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+
+    <link href="../../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--==========================
+Header
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div class="pull-left">
+            <h3 style="color: white;"><a href="../../index.html">Dom universe</a></h3>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../index.html">Background</a></li>
+                <li class="menu-active"><a href="../../index.html">Projects</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+  Hero Section
+============================-->
+<section id="herocontent">
+    <div class="herocontent-container">
+    </div>
+</section><!-- #hero -->
+
+<main id="main">
+
+    <!--==========================
+      stoma
+    ============================-->
+    <section id="sens-critique-recommended-system">
+        <div class="container">
+            <div class="row stoma-container">
+
+                <div class="col-lg-12 content order-lg-1 order-2">
+                    <h2 class="title"><a href="https://www.senscritique.com/">SensCritique</a> - Système de
+                        recommandation</h2>
+                        <a href="https://www.senscritique.com/">SensCritique</a> est un site web français incontournable
+                        pour les cinéphiles, mélomanes et
+                        littéraires. SensCritique regorge de films, de critiques, de notes, de classements orientant
+                        les utilisateurs dans la constellation infinie des films du monde.
+                        </br></br>
+                        J’y ai découvert grâce à ce site pléthore de réalisateurs (Denis Villeneuve, James Gray, Michael
+                        Cimino …), de films et finalement, de grands moments.
+                        </br></br>
+                        Il manque cependant un élément à cette plateforme : Un système de recommandation.
+                        </br></br>
+                        En effet, j’ai parcouru durant des heures le site à la recherche de nouveautés, ajouté des films
+                        à ma liste d’envie. Mais cela est chronophage et un système de recommandation pourrait
+                        facilement pallier ce problème épineux en valorisant la pluralité des profils de la communauté
+                        Sens critique.
+                        </br></br>
+                        C’est ainsi l’objet de cet article : <b>Mon système de recommandation pour SensCritique</b>
+                    </p>
+
+                    <img src="../../img/content/projects/sens-critique/recommended_system.png"
+                         style="display: block;margin-left: auto;margin-right: auto;">
+
+                    <h3 class="title">La donnée</h3>
+
+                    <p>Le système de recommendation a été créé à partir de trois sources de données:</p>
+                    <ul>
+                        <li>Utilisateurs</li>
+                        <li>Films</li>
+                        <li>Notes données aux films par les utilisateurs</li>
+                    </ul>
+
+                    <table id="sens-critique">
+                        <tr>
+                            <th>
+                                <center>Utilisateurs</center>
+                            </th>
+                            <th>
+                                <center>Films</center>
+                            </th>
+                            <th>
+                                <center>Notes</center>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Ces données décrivent brièvement les membres de la communauté SensCritique.</td>
+                            <td>Ces données décrivent les films repertoriés sur SensCritique. Cette donnée est utile
+                                lors de la restitution notamment pour filter les recommendations par genre.
+                            </td>
+                            <td>Ces données sont les données d'entraînement pour les modèles. Elles permettent
+                                d'appréhender les groupes similaires et d'anticiper les envies des membres
+                                en se basant sur la similarité de leur goût.
+                            </td>
+                        </tr>
+                    </table>
+                    </br></br>
+                    <p><i>Ces données ont été scrapées sur le site SensCritique afin d'entraîner les modèles et de créer
+                        le process complet. Ces données sont donc partielles et les modèles décrits dans la section
+                        suivante
+                        ne seront optimaux qu'en les entraînant sur la base de données complète de SensCritique.</i></p>
+
+                    <h3 class="title">Modèles et résultats</h3>
+                    Plusieurs modèles ont été testés afin de déterminer le plus performant. Les modèles utilisés
+                    proviennent de la librairie python <a href="http://surpriselib.com/"> Surprise</a>.
+
+                    </br></br>
+                    <p><b>Processus complet</b></p>
+
+                    <img src="../../img/content/projects/sens-critique/ml_process.png"
+                         style="display: block;margin-left: auto;margin-right: auto;">
+
+                    <h3 class="title">La mise en production</h3>
+
+                    <h3 class="title">Content & contacts</h3>
+                    <p><a href="https://github.com/ldom1/rs_senscritique"><img src="../../img/logo/github_logo.png"
+                                                                               style="width: 4%; height: 2%;">
+                        My Github</a></p>
+                    </br>
+                    <p>louis@giron-dom.eu</p>
+                    <p>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section><!-- #stoma -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+        <div class="container wow fadeInUp">
+            <div class="section-header">
+                <h3 class="section-title">Contact</h3>
+                <p class="section-description">All contact information here</p>
+            </div>
+        </div>
+
+        <div class="container wow fadeInUp mt-5">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-3 col-md-4">
+
+                    <div class="social-links">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #contact -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            Copyright <strong>Regna</strong>. All Rights Reserved
+            </br>
+            Copyright (all content) <strong>Louis Giron</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+            -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/jquery/jquery-migrate.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../lib/easing/easing.min.js"></script>
+<script src="../../lib/wow/wow.min.js"></script>
+<script src="../../lib/waypoints/waypoints.min.js"></script>
+<script src="../../lib/counterup/counterup.min.js"></script>
+<script src="../../lib/superfish/hoverIntent.js"></script>
+<script src="../../lib/superfish/superfish.min.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="../../js/main.js"></script>
+
+</body>
+</html>
