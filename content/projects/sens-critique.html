@@ -70,22 +70,25 @@ Header
                 <div class="col-lg-12 content order-lg-1 order-2">
                     <h2 class="title"><a href="https://www.senscritique.com/">SensCritique</a> - Système de
                         recommandation</h2>
-                        <a href="https://www.senscritique.com/">SensCritique</a> est un site web français incontournable
-                        pour les cinéphiles, mélomanes et
-                        littéraires. SensCritique regorge de films, de critiques, de notes, de classements orientant
-                        les utilisateurs dans la constellation infinie des films du monde.
-                        </br></br>
-                        J’y ai découvert grâce à ce site pléthore de réalisateurs (Denis Villeneuve, James Gray, Michael
-                        Cimino …), de films et finalement, de grands moments.
-                        </br></br>
-                        Il manque cependant un élément à cette plateforme : Un système de recommandation.
-                        </br></br>
-                        En effet, j’ai parcouru durant des heures le site à la recherche de nouveautés, ajouté des films
-                        à ma liste d’envie. Mais cela est chronophage et un système de recommandation pourrait
-                        facilement pallier ce problème épineux en valorisant la pluralité des profils de la communauté
-                        Sens critique.
-                        </br></br>
-                        C’est ainsi l’objet de cet article : <b>Mon système de recommandation pour SensCritique</b>
+                    <h3 class="title">Executive summary</h3>
+
+                    <h3 class="title">Introduction</h3>
+                    <a href="https://www.senscritique.com/">SensCritique</a> est un site web français incontournable
+                    pour les cinéphiles, mélomanes et
+                    littéraires. SensCritique regorge de films, de critiques, de notes, de classements orientant
+                    les utilisateurs dans la constellation infinie des films du monde.
+                    </br></br>
+                    J’y ai découvert grâce à ce site pléthore de réalisateurs (Denis Villeneuve, James Gray, Michael
+                    Cimino …), de films et finalement, de grands moments.
+                    </br></br>
+                    Il manque cependant un élément à cette plateforme : Un système de recommandation.
+                    </br></br>
+                    En effet, j’ai parcouru durant des heures le site à la recherche de nouveautés, ajouté des films
+                    à ma liste d’envie. Mais cela est chronophage et un système de recommandation pourrait
+                    facilement pallier ce problème épineux en valorisant la pluralité des profils de la communauté
+                    Sens critique.
+                    </br></br>
+                    C’est ainsi l’objet de cet article : <b>Mon système de recommandation pour SensCritique</b>
                     </p>
 
                     <img src="../../img/content/projects/sens-critique/recommended_system.png"
@@ -132,6 +135,22 @@ Header
                     <h3 class="title">Modèles et résultats</h3>
                     Plusieurs modèles ont été testés afin de déterminer le plus performant. Les modèles utilisés
                     proviennent de la librairie python <a href="http://surpriselib.com/"> Surprise</a>.
+                    </br></br>
+                    <b>Modèles</b>:
+                    <ul>
+                        <li>
+                            <a href="https://surprise.readthedocs.io/en/stable/matrix_factorization.html">SVD</a>
+                        </li>
+                        <li>
+                            <a href="https://surprise.readthedocs.io/en/stable/knn_inspired.html#surprise.prediction_algorithms.knns.KNNBasic">KNNBasic</a>
+                        </li>
+                        <li>
+                            <a href="https://surprise.readthedocs.io/en/stable/knn_inspired.html#surprise.prediction_algorithms.knns.KNNWithMeans">KNNWithMeans</a>
+                        </li>
+                        <li>
+                            <a href="https://surprise.readthedocs.io/en/stable/knn_inspired.html#surprise.prediction_algorithms.knns.KNNWithZScore">KNNWithZScore</a>
+                        </li>
+                    </ul>
 
                     </br></br>
                     <p><b>Processus complet</b></p>
@@ -139,7 +158,106 @@ Header
                     <img src="../../img/content/projects/sens-critique/ml_process.png"
                          style="display: block;margin-left: auto;margin-right: auto;">
 
+                    </br></br>
+                    Le processus décrit si dessous est appliquée sur la base de données scrapée. Cette base de données
+                    comprend:
+                    <ul>
+                        <li>
+                            1842 utilisateurs
+                        </li>
+                        <li>
+                            31489 items (notes)
+                        </li>
+                    </ul>
+                    Sur cette base partielle, les données d'entraînement comprennent:
+                    <ul>
+                        <li>
+                            1805 utilisateurs
+                        </li>
+                        <li>
+                            28425 items (notes)
+                        </li>
+                    </ul>
+
+                    En se basant uniquement sur ces données, nous obtenons les résultats suivants:
+                    </br></br>
+                    <table id="sens-critique">
+                        <tr>
+                            <th>
+                                <center>Modèle</center>
+                            </th>
+                            <th>
+                                <center>Time to fit</center>
+                            </th>
+                            <th>
+                                <center>RMSE</center>
+                            </th>
+                            <th>
+                                <center>MAE</center>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>SVD</td>
+                            <td>614.46 s.</td>
+                            <td>1.491</td>
+                            <td>1.152</td>
+                        </tr>
+                        <tr>
+                            <td>KNNBasic</td>
+                            <td>162.78 s.</td>
+                            <td>1.599</td>
+                            <td>1.225</td>
+                        </tr>
+                        <tr>
+                            <td>KNNWithMeans</td>
+                            <td>140.01 s.</td>
+                            <td>1.548</td>
+                            <td>1.19</td>
+                        </tr>
+                        <tr>
+                            <td>KNNWithZScore</td>
+                            <td>140.93 s.</td>
+                            <td>1.545</td>
+                            <td>1.182</td>
+                        </tr>
+                    </table>
+
+                    </br></br>
+                    Le modèle sélectionné est le modèle SVD. Sur la base de test, le modèle présente les résultats
+                    suivants:
+                    <ul>
+                        <li>
+                            RMSE: 2.141
+                        </li>
+                        <li>
+                            MAE: 1.124
+                        </li>
+                    </ul>
+
+                    </br>
+
+                    La base de données n'étant pas exhaustive, les modèles pourront être drastiquement améliorés si
+                    la base de données complète est rendue accessible.
+
+                    </br></br>
+
                     <h3 class="title">La mise en production</h3>
+
+                    <p> La mise en production du système de recommendation a été faite via docker. Une image docker a
+                        été
+                        créée et le modèle entraîné lors de sa construction. Ainsi, une fois construite, les
+                        recommendations
+                        sont accessibles en local.
+                    </p>
+                    <p>L'image docker est accessible ici: <a
+                            href="https://hub.docker.com/repository/docker/lgirondomeu/docker-sens-critique-recommended-system">Docker
+                        image</a></p>
+
+                    <p>Il suffit ensuite de lancer la commande: <code>docker run -it -d -p 8501:8501
+                        lgirondomeu/docker-sens-critique-recommended-system streamlit run rssenscritique/main.py</code>
+                        et d'accéder au système via:
+                        http://localhost:8501/</p>
+                    <p>Le front a été developpé avec le package <a href="https://www.streamlit.io/">streamlit</a>.</p>
 
                     <h3 class="title">Content & contacts</h3>
                     <p><a href="https://github.com/ldom1/rs_senscritique"><img src="../../img/logo/github_logo.png"
